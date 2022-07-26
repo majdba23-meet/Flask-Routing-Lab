@@ -8,7 +8,15 @@ app = Flask(  # Create a flask app
 )
 
 # Your code should be below
+@app_route('/')
+def home():
+    return render_template("home.html")
 
+
+a=5
+@app_route('/product')
+def product():
+    return render_template("product.html")
 
 
 
