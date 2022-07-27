@@ -8,17 +8,37 @@ app = Flask(  # Create a flask app
 )
 
 # Your code should be below
-@app_route('/')
+@app.route('/')
 def home():
     return render_template("home.html")
 
 
-a=5
-@app_route('/product')
+
+@app.route('/product')
 def product():
     return render_template("product.html")
 
+@app.route('/p2')
+def p2():
+    return render_template("p2.html")
 
+@app.route('/p3')
+def p3():
+    return render_template("p3.html")
+
+@app.route('/cart')
+def cart():
+    return render_template("cart.html")
+
+
+@app.route('/cart2')
+def cart2():
+    return render_template("cart2.html")
+
+
+@app.route('/cart3')
+def cart3():
+    return render_template("cart3.html")
 
 # Your code should be above
 
